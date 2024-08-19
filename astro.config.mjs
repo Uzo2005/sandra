@@ -7,5 +7,8 @@ export default defineConfig({
   integrations: [react()],
   outDir: "./docs",
   site: "http://cletusigwe.com",
-  base: "/sandra"
+  base: "/sandra",
+  build: {
+    assets: "assets",
+  },
 });
