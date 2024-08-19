@@ -1,4 +1,4 @@
-import std/[oids, strformat, os, json, httpclient]
+import std/[oids, strformat, os, json, httpclient, logging]
 import pkg/[prologue, prologue/middlewares/cors, openaiClient]
 
 const
@@ -15,6 +15,8 @@ const
 
 when defined(release):
     let port = Port(80)
+    var logFile = newFileLogger("logs.txt", levelThreshold=lvlAll)
+    logging.addHandler(logFile)
 else:
     let port = Port(8080)
 
