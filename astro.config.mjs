@@ -7,6 +7,6 @@ export default defineConfig({
   integrations: [react()],
   outDir: "./docs",
   build: {
-    assetsPrefix: "sandra",
+    assetsPrefix: "/sandra",
   },
 });
