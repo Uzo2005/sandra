@@ -13,7 +13,14 @@ const
             }
         """
 
-var app = newApp()
+when defined(release):
+    let port = Port(80)
+else:
+    let port = Port(8080)
+
+let settings = newSettings(port = port)
+
+var app = newApp(settings)
 
 func addUserMessage(chatState: var JsonNode, message: string) =
     chatState["messages"].add(%*{"role": "user", "content": message})
