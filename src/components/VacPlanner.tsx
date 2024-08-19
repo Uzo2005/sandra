@@ -2,7 +2,7 @@ import ChatBox from "../components/ChatBox";
 import BotArena from "../components/BotArena";
 import { useState, useEffect } from "react";
 import { SERVER_BASE_URL, type chatProps } from "../constants";
-
+console.log(SERVER_BASE_URL)
 const VacPlanner = () => {
   const [chat, setChat] = useState<chatProps[]>([
     {

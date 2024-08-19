@@ -1,7 +1,10 @@
-// export const SERVER_BASE_URL = "http://localhost:8080";
-export const SERVER_BASE_URL = "http://192.168.165.55:8080";
+export const SERVER_BASE_URL = import.meta.env.DEV
+  ? "http://localhost:8080"
+  : "http://34.239.137.104";
 
 export interface chatProps {
   role: "assistant" | "user" | "loading";
   content: string;
 }
+
+console.log();

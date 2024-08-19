@@ -2,7 +2,7 @@ import std/[oids, strformat, os, json, httpclient]
 import pkg/[prologue, prologue/middlewares/cors, openaiClient]
 
 const
-    allowedClientDomains = @["http://localhost:4321"]
+    allowedClientDomains = @["http://localhost:4321", "https://cletusigwe.com"]
     baseConversation =
         """{
                 "model": "gpt-4o-mini",
