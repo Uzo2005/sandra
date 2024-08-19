@@ -9,6 +9,6 @@ export default defineConfig({
   site: "http://cletusigwe.com",
   base: "/sandra",
   build: {
-    assets: "assets",
+    assets: "_assets",
   },
 });
