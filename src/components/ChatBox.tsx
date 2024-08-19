@@ -74,7 +74,7 @@ const ChatBox = ({ setChatState }: Props) => {
         className="col-span-1 flex justify-center items-center"
       >
         <img
-          src="/sendMessage.svg"
+          src={`${import.meta.env.BASE_URL}/sendMessage.svg`}
           alt="send_message_icon"
           className="size-5 md:size-10 cursor-pointer opacity-70 hover:opacity-100"
           title="send message"

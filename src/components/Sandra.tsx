@@ -35,7 +35,7 @@ const Sandra = ({ sandraMsg, responseIndex, lastChatIndex }: Props) => {
     <div className="p-1 bg-[#181818] rounded-md my-2 w-[85%] md:w-[70%] mr-auto">
       <div className="float-left mr-2 flex flex-col gap-2 p-2 justify-center items-center backdrop-blur-md size-10 md:size-16 bg-[#181818] border-2 border-yellow-500 border-opacity-50 rounded-md">
         <img
-          src="/sandra.png"
+          src={`${import.meta.env.BASE_URL}/sandra.png`}
           alt="sandra's picture"
           className="size-6 lg:size-8"
         />

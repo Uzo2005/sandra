@@ -6,7 +6,6 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   outDir: "./docs",
-  build: {
-    assetsPrefix: "/sandra",
-  },
+  site: "http://cletusigwe.com",
+  base: "/sandra"
 });
