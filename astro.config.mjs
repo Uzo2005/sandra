@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   outDir: "./docs",
-  site: "https://cletusigwe.com/sandra",
+  base: "https://cletusigwe.com/sandra",
 });
