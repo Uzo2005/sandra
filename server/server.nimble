@@ -9,6 +9,6 @@ srcDir        = "src"
 
 # Dependencies
 
-requires "nim >= 2.1.1"
+requires "nim >= 2.0.0"
 requires "prologue >= 0.6.6"
 requires "openaiClient >= 0.1.0"
