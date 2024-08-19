@@ -25,4 +25,5 @@ pnpm-debug.log*
 
 server/.env
 server/chats
+server/log.txt
 sampleResponse.json

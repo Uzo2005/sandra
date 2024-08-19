@@ -1,3 +1,0 @@
-DEBUG Prologue is serving at http://0.0.0.0:8080 
-DEBUG Starting 4 threads
-DEBUG Listening on port 8080

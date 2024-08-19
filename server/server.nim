@@ -14,15 +14,10 @@ const
         """
 
 when defined(release):
-    let port = Port(80)
-    var logFile = newFileLogger("logs.txt", levelThreshold=lvlAll)
+    var logFile = newFileLogger("logs.txt", levelThreshold = lvlAll)
     logging.addHandler(logFile)
-else:
-    let port = Port(8080)
 
-let settings = newSettings(port = port)
-
-var app = newApp(settings)
+var app = newApp()
 
 func addUserMessage(chatState: var JsonNode, message: string) =
     chatState["messages"].add(%*{"role": "user", "content": message})
